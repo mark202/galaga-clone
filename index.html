@@ -732,8 +732,8 @@
                     // Wings
                     ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
                     ctx.beginPath();
-                    ctx.ellipse(-w / 2 + 4, -4, 8, 12 * flip, 0.3, 0, Math.PI * 2);
-                    ctx.ellipse(w / 2 - 4, -4, 8, 12 * flip, -0.3, 0, Math.PI * 2);
+                    ctx.ellipse(-w / 2 + 4, -4, 8, Math.abs(12 * flip), 0.3, 0, Math.PI * 2);
+                    ctx.ellipse(w / 2 - 4, -4, 8, Math.abs(12 * flip), -0.3, 0, Math.PI * 2);
                     ctx.fill();
 
                     // Eyes
